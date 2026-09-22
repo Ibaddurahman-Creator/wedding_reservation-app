@@ -526,7 +526,7 @@
           <p class="section-subtitle text-center label-2">Special Selection</p>
 
           <h2 class="headline-1 section-title text-center">The Best Pricelist</h2>
-
+          @foreach ($dtPricelist as $item)
           <ul class="grid-list">
 
             <li>
@@ -541,7 +541,7 @@
 
                   <div class="title-wrapper">
                     <h3 class="title-3">
-                      <a href="#" class="card-title">Nama Pricelist</a>
+                      <a href="#" class="card-title">{{ $item->nama_pricelist }}</a>
                     </h3>
 
                     <span class="badge label-1">Best Seller</span>
@@ -696,7 +696,7 @@
             </li>
 
           </ul>
-
+          @endforeach
           <p class="menu-text text-center">
             Open daily from <span class="span">9:00 am</span> to <span class="span">18:00 pm</span>
           </p>
